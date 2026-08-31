@@ -1,0 +1,207 @@
+.wrap {
+  padding-top: 9rem;
+}
+
+.head {
+  padding-left: var(--rail);
+}
+
+.h1 {
+  font-size: var(--t-h1);
+  margin-block: var(--s-4) var(--s-5);
+  letter-spacing: -0.04em;
+}
+
+.h2 {
+  font-size: var(--t-h2);
+  letter-spacing: -0.035em;
+}
+
+.body {
+  margin-top: var(--s-4);
+  max-width: var(--measure);
+  color: var(--foam-dim);
+}
+
+/* ---------- impact ---------- */
+
+.impactWrap {
+  padding-left: var(--rail);
+  margin-top: var(--section);
+}
+
+.impact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-7) var(--s-5);
+}
+
+@media (max-width: 52rem) {
+  .impact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* On the revealed wrapper rather than the cell, matching the home page. */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.impactValue {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.4rem + 2.6vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--biolume-lift);
+  font-variant-numeric: tabular-nums;
+}
+
+.impactLabel {
+  font-size: var(--t-small);
+  color: var(--foam-dim);
+  line-height: 1.4;
+}
+
+/* ---------- programs ---------- */
+
+/* The rail padding lives on the wrapper: putting it on the grid itself would
+   paint the grid's hairline background into the reserved margin. */
+.programsWrap {
+  padding-left: var(--rail);
+  margin-top: var(--section);
+}
+
+.programs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 52rem) {
+  .programs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.program {
+  background: var(--abyss);
+  padding: clamp(var(--s-5), 3vw, var(--s-7));
+  display: flex;
+  transition: background-color 0.4s var(--ease);
+}
+
+.program:hover {
+  background: var(--trench);
+}
+
+.programInner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.programHead {
+  display: flex;
+  gap: var(--s-4);
+  align-items: baseline;
+}
+
+.programIndex {
+  font-family: var(--font-sans);
+  font-size: var(--t-eyebrow);
+  color: var(--biolume-lift);
+  letter-spacing: 0.04em;
+  flex: none;
+}
+
+.programName {
+  font-size: var(--t-h3);
+  letter-spacing: -0.025em;
+}
+
+.programTagline {
+  margin-top: var(--s-1);
+  font-family: var(--font-sans);
+  font-size: var(--t-eyebrow);
+  color: var(--foam-faint);
+}
+
+.programBody {
+  margin-top: var(--s-5);
+  color: var(--foam-dim);
+  font-size: var(--t-small);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.metric {
+  margin-top: var(--s-5);
+  padding-top: var(--s-4);
+  border-top: 1px solid var(--line);
+  font-family: var(--font-sans);
+  font-size: var(--t-eyebrow);
+  color: var(--foam-faint);
+}
+
+.metric b {
+  font-size: var(--t-body);
+  color: var(--foam);
+  letter-spacing: -0.01em;
+}
+
+.metricReach {
+  display: block;
+  margin-top: var(--s-1);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* ---------- photo ---------- */
+
+.photoBand {
+  margin-top: var(--section);
+}
+
+.photoBand img {
+  width: 100%;
+  height: clamp(14rem, 34vw, 26rem);
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.05);
+}
+
+/* ---------- cta ---------- */
+
+.cta {
+  padding-left: var(--rail);
+  margin-top: var(--section);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-6);
+  padding: var(--s-3) var(--s-5);
+  background: var(--biolume);
+  color: var(--abyss);
+  font-size: var(--t-small);
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: background-color 0.35s var(--ease);
+}
+
+.button span {
+  transition: transform 0.35s var(--ease);
+}
+
+.button:hover {
+  background: var(--biolume-lift);
+}
+
+.button:hover span {
+  transform: translateX(4px);
+}
