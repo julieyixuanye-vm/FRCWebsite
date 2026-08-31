@@ -138,13 +138,10 @@
   }
 }
 
-.ways > div {
-  padding-block: var(--s-4);
-  border-top: 1px solid var(--line);
-}
-
-.ways > div:last-child {
-  border-bottom: 1px solid var(--line);
+.ways {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
 }
 
 .ways dt {

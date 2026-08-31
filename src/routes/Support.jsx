@@ -60,8 +60,7 @@ export default function Support() {
       <section className={`page ${styles.contact}`}>
         <Reveal className={styles.contactGrid}>
           <div>
-            <p className="eyebrow">Get involved</p>
-            <h2 className={styles.h2}>Three ways in</h2>
+            <h2 className={styles.h2}>3 ways to be involved</h2>
           </div>
           <dl className={styles.ways}>
             <div>

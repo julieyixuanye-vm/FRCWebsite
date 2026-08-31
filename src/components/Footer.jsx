@@ -67,7 +67,7 @@ export default function Footer() {
         <p>
           © {new Date().getFullYear()} MSET Fish · Team {team.number}
         </p>
-        <p className={styles.colophon}>Archivo &amp; IBM Plex Mono</p>
+        <p className={styles.colophon}>Set in Saira</p>
       </div>
     </footer>
   )
