@@ -1,0 +1,53 @@
+.wrap {
+  padding-left: var(--rail);
+  min-height: 70svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--s-4);
+  padding-top: 9rem;
+  padding-bottom: var(--s-9);
+}
+
+.fish {
+  width: clamp(4rem, 12vw, 7rem);
+  height: auto;
+  opacity: 0.5;
+  margin-bottom: var(--s-3);
+  transform: rotate(-8deg);
+}
+
+.h1 {
+  font-size: var(--t-h2);
+  letter-spacing: -0.035em;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-4);
+  padding: var(--s-3) var(--s-5);
+  border: 1px solid var(--line-bright);
+  color: var(--foam);
+  font-size: var(--t-small);
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition:
+    border-color 0.35s var(--ease),
+    background-color 0.35s var(--ease);
+}
+
+.button span {
+  transition: transform 0.35s var(--ease);
+}
+
+.button:hover {
+  border-color: var(--current);
+  background: color-mix(in srgb, var(--current) 12%, transparent);
+}
+
+.button:hover span {
+  transform: translateX(4px);
+}
