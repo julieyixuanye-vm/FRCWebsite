@@ -1,13 +1,13 @@
 /*
  * Design tokens.
  *
- * The three brand colours are sampled directly from the MSET fish artwork
+ * The three brand colors are sampled directly from the MSET fish artwork
  * (#0195DB / #66CB65 / #33659A) rather than picked to look like it, so the
  * logo never sits slightly off from the palette around it.
  */
 
 :root {
-  /* Ground: a cold near-black with a blue bias, not neutral grey. */
+  /* Ground: a cold near-black with a blue bias, not neutral gray. */
   --abyss: #04070c;
   --trench: #0a1420;
   --shelf: #101d2c;
@@ -18,7 +18,7 @@
   --biolume: #66cb65;
   --hull: #33659a;
 
-  /* Lifted variants for text and glows, where the flat brand colour is too dim
+  /* Lifted variants for text and glows, where the flat brand color is too dim
      against the abyss to hold a 4.5:1 contrast ratio. */
   --current-lift: #4fc0f5;
   --biolume-lift: #8ee08c;

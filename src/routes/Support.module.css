@@ -30,9 +30,7 @@
 .uses {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border-block: 1px solid var(--line);
+  gap: var(--s-7) var(--s-5);
 }
 
 @media (max-width: 60rem) {
@@ -45,11 +43,6 @@
   .uses {
     grid-template-columns: 1fr;
   }
-}
-
-.use {
-  background: var(--abyss);
-  padding: var(--s-6) var(--s-5) var(--s-6) 0;
 }
 
 .useIndex {

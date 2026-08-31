@@ -132,7 +132,7 @@ ol {
   border: 0;
 }
 
-/* Link that underlines from the left on hover rather than fading in a colour. */
+/* Link that underlines from the left on hover rather than fading in a color. */
 .link {
   position: relative;
   color: var(--foam);

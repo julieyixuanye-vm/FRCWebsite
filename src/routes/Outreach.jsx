@@ -10,7 +10,7 @@ export default function Outreach() {
       <header className={`page ${styles.head}`}>
         <h1 className={styles.h1}>Outreach</h1>
         <p className="lead">
-          FIRST asks teams to do more than build. These are the programmes 649 runs alongside the
+          FIRST asks teams to do more than build. These are the programs 649 runs alongside the
           season. Most of them run year-round, and none of them are charged for.
         </p>
       </header>
@@ -19,7 +19,6 @@ export default function Outreach() {
         <ul className={styles.impact}>
           {impact.map((m, i) => (
             <li key={m.label}>
-              {/* Revealed inside the cell so the cell keeps its background. */}
               <Reveal delay={i * 70} className={styles.stack}>
                 <span className={styles.impactValue}>{m.value}</span>
                 <span className={styles.impactLabel}>{m.label}</span>

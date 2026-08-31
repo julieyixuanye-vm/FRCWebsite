@@ -24,7 +24,7 @@ hard-code a fact, so a season or a sponsor can be changed in one place:
 | --- | --- |
 | `seasons.js` | Every season 2001 to present: game, awards, events, championship trips |
 | `team.js` | Team identity, headline figures, next-season dates, social links |
-| `outreach.js` | Outreach programmes and impact figures |
+| `outreach.js` | Outreach programs and impact figures |
 | `sponsors.js` | Sponsor roster, grouped by tier, and what sponsorship funds |
 
 Season totals on the site (awards won, seasons, filter counts) are **derived**
@@ -34,7 +34,7 @@ figures cannot drift apart. Add a season to the array and every count updates.
 ### Two things need checking before this is public
 
 `outreach.js` and `sponsors.js` both export a `*_NEED_REVIEW` flag, because the
-programme descriptions, impact numbers and sponsor list were transcribed from the
+program descriptions, impact numbers and sponsor list were transcribed from the
 team's own banners photographed at the 2022 championship. They are four seasons
 old and were read at limited resolution. Confirm them against a current source,
 especially the sponsor roster, where a dropped or missing name matters.
@@ -56,11 +56,11 @@ src/
 ```
 
 Plain CSS with custom properties and CSS Modules, no utility framework. Tokens
-are in `src/styles/tokens.css`; the three brand colours there are sampled from
+are in `src/styles/tokens.css`; the three brand colors there are sampled from
 the fish artwork so the logo never sits slightly off from the palette.
 
 `FishMark.jsx` is the team logo traced to vector paths, with fills bound to CSS
-custom properties so it can be recoloured per context.
+custom properties so it can be recolored per context.
 
 ## Motion
 

@@ -53,7 +53,7 @@ export const allSponsors = sponsorTiers.flatMap((t) => t.sponsors)
 export const supportUses = [
   {
     title: 'Raw stock and fabrication',
-    body: 'Aluminium extrusion, plate, gearboxes and the machining time to turn them into a robot.',
+    body: 'Aluminum extrusion, plate, gearboxes and the machining time to turn them into a robot.',
   },
   {
     title: 'Competition entry',

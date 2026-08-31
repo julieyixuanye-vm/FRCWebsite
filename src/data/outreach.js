@@ -57,11 +57,11 @@ export const programs = [
   {
     id: 'workshops',
     name: 'Summer workshops',
-    tagline: 'Free summer programme',
+    tagline: 'Free summer program',
     body:
-      'Free multi-week summer programmes introducing CAD, fabrication and controls to students ' +
+      'Free multi-week summer programs introducing CAD, fabrication and controls to students ' +
       'with no prior robotics experience, run entirely by team members.',
-    metric: { value: '2', unit: 'six-week programmes', reach: 'run virtually' },
+    metric: { value: '2', unit: 'six-week programs', reach: 'run virtually' },
   },
 ]
 

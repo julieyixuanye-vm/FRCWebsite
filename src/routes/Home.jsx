@@ -86,8 +86,6 @@ export default function Home() {
         <Reveal>
           <p className="eyebrow">Record</p>
         </Reveal>
-        {/* The reveal sits inside the cell, not on it: fading the cell itself
-            would take its background with it and expose the grid rule beneath. */}
         <ul className={styles.stats}>
           {stats.map((s, i) => (
             <li key={s.label} className={styles.stat}>
@@ -160,6 +158,8 @@ export default function Home() {
 
         <ul className={styles.recent}>
           {recent.map((s, i) => (
+            // Revealed inside the cell: this grid still draws rules through its
+            // own background, which a faded cell would take with it.
             <li key={s.year} className={styles.recentItem}>
               <Reveal delay={i * 80} className={styles.stack}>
                 <span className={styles.recentYear}>{s.year}</span>
@@ -182,14 +182,14 @@ export default function Home() {
           <div className={styles.outreachGrid}>
             <Reveal className={styles.outreachText}>
               <p className="eyebrow">Outreach</p>
-              <h2 className={styles.h2}>Six programmes, run year-round</h2>
+              <h2 className={styles.h2}>Six programs, run year-round</h2>
               <p className={styles.body}>
-                Rebuilt ride-on cars for children who cannot use a standard one. Maths and English
+                Rebuilt ride-on cars for children who cannot use a standard one. Math and English
                 videos for girls who learn from a shared phone. Solar lamps where the grid does not
                 reach. FLL teams coached through their first competition.
               </p>
               <Link to="/outreach" className={styles.moreLink}>
-                All programmes <span aria-hidden="true">→</span>
+                All programs <span aria-hidden="true">→</span>
               </Link>
             </Reveal>
 

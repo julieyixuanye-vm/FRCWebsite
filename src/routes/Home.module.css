@@ -257,10 +257,8 @@
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
+  gap: var(--s-7) var(--s-5);
   margin-top: var(--s-6);
-  background: var(--line);
-  border-block: 1px solid var(--line);
 }
 
 @media (max-width: 52rem) {
@@ -269,13 +267,9 @@
   }
 }
 
-.stat {
-  background: var(--abyss);
-  padding: var(--s-6) var(--s-5) var(--s-6) 0;
-}
-
-/* Vertical stack used inside grid cells, on the revealed wrapper rather than
-   the cell, so the cell keeps painting its own background while hidden. */
+/* Vertical stack for grid cells. It sits on the revealed wrapper rather than
+   the cell itself, so cells that draw their own background keep it while the
+   contents are still fading in. */
 .stack {
   display: flex;
   flex-direction: column;

@@ -11,7 +11,7 @@ export default function Support() {
         <h1 className={styles.h1}>Support</h1>
         <p className="lead">
           A FIRST Robotics season is expensive before anyone touches a tool. Sponsorship is what
-          keeps the team competing and keeps every outreach programme free to the families using it.
+          keeps the team competing and keeps every outreach program free to the families using it.
         </p>
       </header>
 
@@ -19,7 +19,6 @@ export default function Support() {
         <ul className={styles.uses}>
           {supportUses.map((u, i) => (
             <li key={u.title} className={styles.use}>
-              {/* Revealed inside the cell so the cell keeps its background. */}
               <Reveal delay={i * 60}>
                 <span className={styles.useIndex}>{String(i + 1).padStart(2, '0')}</span>
                 <h2 className={styles.useTitle}>{u.title}</h2>

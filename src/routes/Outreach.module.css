@@ -33,9 +33,7 @@
 .impact {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border-block: 1px solid var(--line);
+  gap: var(--s-7) var(--s-5);
 }
 
 @media (max-width: 52rem) {
@@ -44,13 +42,7 @@
   }
 }
 
-.impact li {
-  background: var(--abyss);
-  padding: var(--s-6) var(--s-5) var(--s-6) 0;
-}
-
-/* On the revealed wrapper rather than the cell. A faded cell would drop its
-   background and expose the grid rule underneath. */
+/* On the revealed wrapper rather than the cell, matching the home page. */
 .stack {
   display: flex;
   flex-direction: column;
@@ -72,7 +64,7 @@
   line-height: 1.4;
 }
 
-/* ---------- programmes ---------- */
+/* ---------- programs ---------- */
 
 /* The rail padding lives on the wrapper: putting it on the grid itself would
    paint the grid's hairline background into the reserved margin. */

@@ -73,7 +73,7 @@ export const seasons = [
     game: 'INFINITE RECHARGE',
     events: 0,
     competed: false,
-    note: 'Season cancelled worldwide partway through by COVID-19.',
+    note: 'Season canceled worldwide partway through by COVID-19.',
   },
   {
     year: 2019,
@@ -196,7 +196,7 @@ export const totalAwards = seasons.reduce((n, s) => n + (s.awards?.length ?? 0),
 /**
  * Seasons registered, 2001 through the present. This is the figure the official
  * archive reports as "seasons competed". Three of these (2002, 2005 and the
- * cancelled 2020) never reached a field, which `enteredSeasons` excludes.
+ * canceled 2020) never reached a field, which `enteredSeasons` excludes.
  */
 export const seasonCount = seasons.length
 export const enteredSeasons = seasons.filter((s) => s.competed !== false).length
