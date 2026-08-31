@@ -31,7 +31,12 @@ jobs:
       - run: npm run lint
       - run: npm run build
 
+      # enablement lets the action create the Pages site itself using the
+      # workflow's pages:write token, so the first deploy does not depend on
+      # someone with admin flipping the setting by hand.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
