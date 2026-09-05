@@ -51,4 +51,22 @@ export const sponsorTiers = [
 
 export const allSponsors = sponsorTiers.flatMap((t) => t.sponsors)
 
-
+/** What sponsorship actually pays for: concrete line items, not a giving ladder. */
+export const supportUses = [
+  {
+    title: 'Raw stock and fabrication',
+    body: 'Aluminum extrusion, plate, gearboxes and the machining time to turn them into a robot.',
+  },
+  {
+    title: 'Competition entry',
+    body: 'Regional registration runs to five figures before a single team member travels.',
+  },
+  {
+    title: 'Travel to championship',
+    body: 'Getting a full team and a 120lb robot across the country when the season goes well.',
+  },
+  {
+    title: 'Outreach at cost',
+    body: 'Every workshop, mentoring session and GoBabyGo build is free to the families involved.',
+  },
+]
