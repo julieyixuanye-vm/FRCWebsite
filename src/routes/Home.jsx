@@ -43,11 +43,11 @@ export default function Home() {
 
           <div className={styles.heroActions}>
             <Link to="/legacy" className={styles.cta}>
-              Twenty-six seasons
+              Twenty-six seasons:
               <span aria-hidden="true">→</span>
             </Link>
             <Link to="/support" className={styles.ctaGhost}>
-              Support the team
+              Support the team:
             </Link>
           </div>
         </div>

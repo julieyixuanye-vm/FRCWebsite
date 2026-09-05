@@ -23,7 +23,7 @@ export const seasons = [
     events: 4,
     worlds: true,
     awards: [
-      { name: 'Regional Winner', event: 'Regional', note: 'Won two regionals this season' },
+      { name: 'Regional Winner', event: 'Regional', note: 'Won two regionals during this season' },
       { name: 'Engineering Inspiration Award', event: 'Regional' },
       { name: 'Creativity Award', event: 'Regional' },
     ],
@@ -73,7 +73,7 @@ export const seasons = [
     game: 'INFINITE RECHARGE',
     events: 0,
     competed: false,
-    note: 'Season canceled worldwide partway through by COVID-19.',
+    note: 'Season canceled worldwide through by COVID-19.',
   },
   {
     year: 2019,

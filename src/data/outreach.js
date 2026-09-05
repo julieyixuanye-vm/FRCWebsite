@@ -37,7 +37,7 @@ export const programs = [
       'Practical engineering sessions run with students who would not otherwise get near a shop, ' +
       'built around the idea that confidence comes from finishing something you can hold.',
   },
-  {
+  { 
     id: 'billion-lights',
     name: 'Billion Lights',
     tagline: 'Solar lighting',

@@ -11,7 +11,7 @@ export default function Support() {
         <h1 className={styles.h1}>Support</h1>
         <p className="lead">
           A FIRST Robotics season is expensive before anyone touches a tool. Sponsorship is what
-          keeps the team competing and keeps every outreach program free to the families using it.
+          keeps the team competing and keeps every outreach program free to the families using it. 
         </p>
       </header>
 

@@ -68,8 +68,7 @@ export default function Outreach() {
           <h2 className={styles.h2}>Want 649 at your school or event?</h2>
           <p className={styles.body}>
             The team runs demonstrations, workshops and FLL coaching through the year. If you run a
-            classroom, library or community group and want robotics in front of your students, the
-            team will come to you.
+            classroom, library or community group and want to explore Robotics, our team will come to you. 
           </p>
           <a className={styles.button} href={links.email}>
             Get in touch <span aria-hidden="true">→</span>
