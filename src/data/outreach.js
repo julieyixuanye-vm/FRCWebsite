@@ -11,15 +11,7 @@
 export const PROGRAMS_NEED_REVIEW = true
 
 export const programs = [
-  {
-    id: 'vikalp',
-    name: 'Vikalp',
-    tagline: 'Education, India',
-    body:
-      'Produced a library of conversational English and mathematics videos for girls in India, ' +
-      'built to be watched on a shared phone with patchy connectivity rather than in a classroom.',
-    metric: { value: '49', unit: 'videos', reach: 'reaching roughly 600 girls' },
-  },
+
   {
     id: 'gobabygo',
     name: 'GoBabyGo',
@@ -37,38 +29,29 @@ export const programs = [
       'Practical engineering sessions run with students who would not otherwise get near a shop, ' +
       'built around the idea that confidence comes from finishing something you can hold.',
   },
-  { 
-    id: 'billion-lights',
-    name: 'Billion Lights',
-    tagline: 'Solar lighting',
+  {
+    id: 'CASA',
+    name: 'California Association of STEM Advocacy',
+    tagline: 'Advocacy',
     body:
-      'Assembling and distributing solar lighting to households without reliable electricity, so ' +
-      'that studying after dark stops being a luxury.',
+      'placeholder, ' +
+      'placeholder.',
+    metric: { value: '38', unit: 'teams mentored', reach: '500+ hours' },
   },
   {
-    id: 'fll',
-    name: 'FLL mentorship',
-    tagline: 'Mentoring',
-    body:
-      'Sustained mentoring of FIRST LEGO League teams across the district, coaching build, ' +
-      'programming and judging, and hosting scrimmages ahead of qualifiers.',
-    metric: { value: '11', unit: 'teams mentored', reach: '500+ hours' },
-  },
-  {
-    id: 'workshops',
-    name: 'Summer workshops',
-    tagline: 'Free summer program',
-    body:
-      'Free multi-week summer programs introducing CAD, fabrication and controls to students ' +
-      'with no prior robotics experience, run entirely by team members.',
-    metric: { value: '2', unit: 'six-week programs', reach: 'run virtually' },
-  },
+    id: 'publicdemos',
+    name: 'Public Demos',
+    tagline: 'something',
+    body: 
+      'something' + 'something',
+    metric: {value: '10+', unit: 'demos', reach: 'to local areas'},
+  }
 ]
 
 /** Headline outreach figures. Same caveat as above: verify before relying on these. */
 export const impact = [
   { value: '1,000+', label: 'Hours of outreach' },
   { value: '11', label: 'FLL teams mentored' },
-  { value: '600', label: 'Students reached by Vikalp' },
+  { value: '600+', label: 'Students reached by Vikalp' },
   { value: '19', label: 'GoBabyGo cars rebuilt' },
 ]
