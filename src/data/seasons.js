@@ -174,30 +174,3 @@ export const seasons = [
     awards: [{ name: 'Regional Finalist', event: 'Silicon Valley Regional' }],
   },
 ]
-
-/** Awards worth surfacing as filters on the archive page, most prestigious first. */
-export const awardFilters = [
-  { id: 'all', label: 'All seasons', match: () => true },
-  {
-    id: 'blue',
-    label: 'Blue banners',
-    match: (a) => /Winner|Chairman|Impact|Engineering Inspiration/i.test(a.name),
-  },
-  { id: 'finals', label: 'Finals runs', match: (a) => /Finalist/i.test(a.name) },
-  {
-    id: 'technical',
-    label: 'Technical awards',
-    match: (a) => /Innovation|Excellence|Quality|Industrial|Control|Creativity/i.test(a.name),
-  },
-]
-
-export const totalAwards = seasons.reduce((n, s) => n + (s.awards?.length ?? 0), 0)
-
-/**
- * Seasons registered, 2001 through the present. This is the figure the official
- * archive reports as "seasons competed". Three of these (2002, 2005 and the
- * canceled 2020) never reached a field, which `enteredSeasons` excludes.
- */
-export const seasonCount = seasons.length
-export const enteredSeasons = seasons.filter((s) => s.competed !== false).length
-export const worldsAppearances = seasons.filter((s) => s.worlds).length
