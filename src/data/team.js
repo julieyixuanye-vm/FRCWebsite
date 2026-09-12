@@ -1,10 +1,5 @@
 /**
- * Team identity and headline figures.
- *
- * Everything here is traceable to a source. Where a figure comes from the
- * official FIRST archive it is hard-coded with a note; where it can be derived
- * from `seasons.js` it is computed, so the page and the archive can never
- * disagree with each other.
+ * This is information about our team; mostly statistics for the team website. 
  */
 
 import { seasons, totalAwards, seasonCount } from './seasons.js'
@@ -20,9 +15,7 @@ export const team = {
 }
 
 /**
- * The 2026-27 FIRST season is CANOPY. The FRC game inside it is revealed at
- * Kickoff in January 2027, so the site deliberately says "unrevealed" rather
- * than guessing a name.
+ * The 2026-27 FIRST season is CANOPY. Unrevealed Game. 
  */
 export const upcoming = {
   season: 'FIRST CANOPY',
@@ -41,7 +34,7 @@ export const currentSeason = seasons[0]
  */
 export const stats = [
   { value: seasonCount, label: 'Seasons', note: 'since 2001' },
-  { value: totalAwards, label: 'Awards won', note: 'regional and championship' },
+  { value: totalAwards, label: 'Awards won', note: 'Regionals and Nationals' },
   { value: 8, label: 'Championship trips', note: 'FIRST Championship' },
   { value: 54, label: 'Events entered', note: 'official archive' },
 ]

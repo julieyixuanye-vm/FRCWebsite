@@ -72,10 +72,7 @@ export default function Home() {
           <div>
             <blockquote className={styles.mission}>{mission}</blockquote>
             <p className={styles.missionBody}>
-              649 is student-run. Students lead the subteams, own the design decisions and answer
-              for them in front of judges; mentors advise rather than build. The robot is the part
-              people see, but the point is what it takes to get one onto the field: a hard
-              deadline, a fixed budget, and forty people who have to agree.
+              649 is a student-run team, held together by our experienced leads who, along with all the other team members, ______. 
             </p>
           </div>
         </Reveal>
@@ -105,7 +102,7 @@ export default function Home() {
           <Reveal className={styles.robotMedia}>
             <img
               src={robotPhoto}
-              alt="Team 649's Rapid React robot in the pit, lit by its own LED strips"
+              alt="Team 649's Rapid React robot in the pit, lit by its LED strips"
               width="733"
               height="732"
               loading="lazy"

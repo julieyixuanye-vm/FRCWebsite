@@ -12,6 +12,12 @@
 
 export const seasons = [
   {
+    year: 2027, 
+    game: 'CANOPY',
+    events: null, 
+    awards: [{}],
+  },
+  {
     year: 2026,
     game: 'REBUILT',
     events: 3,
