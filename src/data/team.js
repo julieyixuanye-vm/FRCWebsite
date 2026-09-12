@@ -7,7 +7,7 @@
  * disagree with each other.
  */
 
-import { seasons, totalAwards, seasonCount } from './seasons'
+import { seasons, totalAwards, seasonCount } from './seasons.js'
 
 export const team = {
   number: 649,

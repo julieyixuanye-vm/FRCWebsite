@@ -173,4 +173,10 @@ export const seasons = [
     worlds: true,
     awards: [{ name: 'Regional Finalist', event: 'Silicon Valley Regional' }],
   },
-]
+];
+export const seasonCount = seasons.length;
+
+export const totalAwards = seasons.reduce(
+  (total, season) => total + (season.awards?.length ?? 0),
+  0
+);
