@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import Reveal from '../components/Reveal'
-import { seasons, awardFilters, totalAwards, enteredSeasons } from '../data/seasons'
+import { seasons, totalAwards, enteredSeasons} from '../data/seasons'
 import { links } from '../data/team'
 import styles from './Legacy.module.css'
 
