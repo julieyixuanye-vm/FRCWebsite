@@ -39,27 +39,6 @@ export const programs = [
     metric: { value: '38', unit: 'teams mentored', reach: '500+ hours' },
   },
   {
-<<<<<<< Updated upstream
-=======
-    id: 'CASA',
-    name: 'California Association of STEM Advocacy',
-    tagline: 'Advocacy',
-    body:
-      'placeholder, ' +
-      'placeholder.',
-    metric: { value: '38', unit: 'teams mentored', reach: '500+ hours' },
-  },
-  {
-    id: 'workshops',
-    name: 'Summer workshops',
-    tagline: 'something',
-    body:
-      'Free multi-week summer programs introducing CAD, fabrication and controls to students ' +
-      'with no prior robotics experience, run entirely by team members.',
-    metric: { value: '2', unit: 'six-week programs', reach: 'run virtually' },
-  },
-  {
->>>>>>> Stashed changes
     id: 'publicdemos',
     name: 'Public Demos',
     tagline: 'something',

@@ -12,12 +12,6 @@
 
 export const seasons = [
   {
-    year: 2027, 
-    game: 'CANOPY',
-    events: null, 
-    awards: [{}],
-  },
-  {
     year: 2026,
     game: 'REBUILT',
     events: 3,
@@ -186,3 +180,25 @@ export const totalAwards = seasons.reduce(
   (total, season) => total + (season.awards?.length ?? 0),
   0
 );
+export const enteredSeasons = seasons.filter(
+  (season) => season.competed !== false
+).length;
+
+export const awardFilters = [
+  { id: 'all', label: 'All', match: () => true },
+  {
+    id: 'regional',
+    label: 'Regional',
+    match: (award) => award.event?.includes('Regional'),
+  },
+  {
+    id: 'championship',
+    label: 'Championship',
+    match: (award) => award.event?.includes('Championship'),
+  },
+  {
+    id: 'engineering',
+    label: 'Engineering',
+    match: (award) => award.name?.includes('Engineering'),
+  },
+];
